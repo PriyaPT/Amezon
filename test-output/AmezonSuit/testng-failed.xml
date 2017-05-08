@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [AmezonSuit]" parallel="tests">
+  <parameter name="BrowseType" value="ff"/>
+  <test name="PrimeTest(failed)" parallel="tests">
+    <classes>
+      <class name="com.amezon.test.TryPrime">
+        <methods>
+          <include name="SelectBrowser"/>
+          <include name="verifyterms"/>
+        </methods>
+      </class> <!-- com.amezon.test.TryPrime -->
+      <class name="com.amezon.utility.BaseUtilityAmezon">
+        <methods>
+          <include name="SelectBrowser"/>
+        </methods>
+      </class> <!-- com.amezon.utility.BaseUtilityAmezon -->
+    </classes>
+  </test> <!-- PrimeTest(failed) -->
+</suite> <!-- Failed suite [AmezonSuit] -->

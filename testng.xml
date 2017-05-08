@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="AmezonSuit" parallel="tests" >
+  <parameter name ="BrowseType" value="ff"></parameter>
+  <test name="FirstTest" >
+       <classes>
+           <class name = "com.amezon.utility.BaseUtilityAmezon"></class>
+           <class name="com.amezon.test.FirstPageTest"></class>           
+       </classes>
+       
+  </test> 
+  
+  <test name="PrimeTest">
+       <classes>
+           <class name = "com.amezon.test.TryPrime"></class>
+           <class name="com.amezon.utility.BaseUtilityAmezon"></class>
+       </classes>
+   </test> 
+</suite> <!-- Suite -->
